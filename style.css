@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Luckiest Guy", cursive;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("./images/background.webp") no-repeat center center / cover;
+    background-attachment: fixed;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+button {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #E0A75E;
+}
+button:hover  {
+    background-color: gold;
+    cursor: pointer;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.btnLettre {
+    width: 40px;
+}
+
+.btnLettre:disabled {
+    background-color: grey;
+    cursor:not-allowed;
+}
+
+#blocConsignes {
+    background-color: rgba(255, 255, 255, .5);
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#motATrouver {
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+#jeu {
+    margin-top: 100px;
+    flex-grow: 1;
+    vertical-align: bottom;
+    display: flex;
+    align-items: flex-end;
+}
+
+#motCache, #consignes {
+    margin-top: 20px;
+}
+
+#commandes {
+    margin-top: 20px;
+}
+
+#propositions {
+    margin-top: 20px;
+}
+
+#consignes {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#titre {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#footer {
+    width: 100%;
+}
+
+#pendu {
+    height: 100%;
+    max-height: 300px;
+}
+
+#mdp {
+    background-color: #35363a;
+    color: white;
+    height: 50px;
+    padding-left: 7px;
+    margin-left: 10px;
+    border: ridge 10px #994D1C;
+    outline: none;
+    text-transform: uppercase;
+}
+
+#btnVerif {
+    margin-left: 10px;
+    border: solid 1px black;
+    height: 30px;
+    padding: 0 15px;
+}
+
+#nbLettres {
+    color: red;
+}
+
+#tout {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#btnReset {
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 30px;
+    height: 60px;
+}
+
+#indice {
+    font-size: 20px;
+}

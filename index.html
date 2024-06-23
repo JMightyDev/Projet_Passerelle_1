@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jeu du pendu - JMighty</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="tout">
+            <div id="blocConsignes" class="container">
+                <h1 id="titre">MOT DE PASSE !</h1>
+                <p id="consignes">
+                    Hey Cowboy ! Ca te dit un petit jeu ?! <br>
+                    Si tu trouves le mot de passe,<br>
+                    Tu gagnes le jackpot !<br>
+                    POUR ça T'AS DROIT à 8 TENATIVES.<br>
+                    Mais si tu perds... C'EST LA CORDE !
+                </p>
+                <p id="indice">
+                    Indices : mot en <span id="nbLettres">0</span> lettres, thème : cowboys !
+                </p>
+                <button id="btnReset" hidden>Recommencer</button>
+            </div>
+            <section id="jeu">
+                <img id="pendu" src="images/pendu1.png" hidden alt="potence">
+            </section>
+            <section id="motCache">
+                <span id="motATrouver"></span>
+            </section>
+            <section id="commandes">
+                <button class="btnLettre" value="A">A</button>
+                <button class="btnLettre" value="B">B</button>
+                <button class="btnLettre" value="C">C</button>
+                <button class="btnLettre" value="D">D</button>
+                <button class="btnLettre" value="E">E</button>
+                <button class="btnLettre" value="F">F</button>
+                <button class="btnLettre" value="G">G</button>
+                <button class="btnLettre" value="H">H</button>
+                <button class="btnLettre" value="I">I</button>
+                <button class="btnLettre" value="J">J</button>
+                <button class="btnLettre" value="K">K</button>
+                <button class="btnLettre" value="L">L</button>
+                <button class="btnLettre" value="M">M</button>
+                <button class="btnLettre" value="N">N</button>
+                <button class="btnLettre" value="O">O</button>
+                <button class="btnLettre" value="P">P</button>
+                <button class="btnLettre" value="Q">Q</button>
+                <button class="btnLettre" value="R">R</button>
+                <button class="btnLettre" value="S">S</button>
+                <button class="btnLettre" value="T">T</button>
+                <button class="btnLettre" value="U">U</button>
+                <button class="btnLettre" value="V">V</button>
+                <button class="btnLettre" value="W">W</button>
+                <button class="btnLettre" value="X">X</button>
+                <button class="btnLettre" value="Y">Y</button>
+                <button class="btnLettre" value="Z">Z</button>
+            </section>
+            <section id="propositions">
+                <label for="mdp">JE PROPOSE...</label>
+                <input type="text" pattern="[a-zA-Z]" name="mdp" id="mdp" placeholder=". . .">
+                <button id="btnVerif" name="btnVerif">Vérifier</button>
+            </section>
+            <div id="footer">
+                <footer>
+                    <p class="container">© 2024 JMighty</p>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script src="main.js" async defer></script>
+    </body>
+</html>
