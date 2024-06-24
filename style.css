@@ -70,18 +70,6 @@ button:hover  {
     align-items: flex-end;
 }
 
-#motCache, #consignes {
-    margin-top: 20px;
-}
-
-#commandes {
-    margin-top: 20px;
-}
-
-#propositions {
-    margin-top: 20px;
-}
-
 #consignes {
     font-size: 20px;
     margin-bottom: 5px;
@@ -129,6 +117,7 @@ button:hover  {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    gap: 20px;
 }
 
 #btnReset {
@@ -142,12 +131,21 @@ button:hover  {
     font-size: 20px;
 }
 
-@media all and (max-width: 1020px) {
-    section {
-        padding: 0 20px; 
-    }
-
+@media all and (max-width: 1130px) {
     .container {
         width: 100%;
+    }
+    #blocConsignes {
+        width: 100%;
+        padding: 0 20px;
+    }
+    body {
+        padding: 0 20px;
+    }
+    #propositions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
