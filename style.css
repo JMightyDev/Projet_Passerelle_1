@@ -141,3 +141,13 @@ button:hover  {
 #indice {
     font-size: 20px;
 }
+
+@media all and (max-width: 1020px) {
+    section {
+        padding: 0 20px;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
