@@ -183,12 +183,12 @@ $('#mdp').on('keydown', function(event) {
     }
 });
 
-btnReset
 $("#btnReset").on("click", () => reset());
 $("#btnVerif").on("click", () => verif(false));
 
 $('.btnLettre').on("click", function() {
     let lettreCliquee = $(this).val().toLowerCase();
+    $(this).prop('disabled', true);
     if (motSelectionne.indexOf(lettreCliquee) !== -1) {
         //lettre trouvée
         for (i=0;i<nbLettres;i++) {
@@ -199,7 +199,6 @@ $('.btnLettre').on("click", function() {
         verif(true);
     } else {
         //lettre introuvable
-        $(this).prop('disabled', true);
         verif(false);
     }
 });
