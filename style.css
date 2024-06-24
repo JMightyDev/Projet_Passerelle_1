@@ -109,6 +109,7 @@ button:hover  {
 
 #nbLettres {
     color: red;
+    font-weight: bold;
 }
 
 #tout {
